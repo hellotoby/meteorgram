@@ -5,7 +5,7 @@ Template.image.rendered = function() {
         $(this).css({
             opacity : 1
         }).parent().css({
-            width : '3%'
+            width : '5%'
         });
     });
 

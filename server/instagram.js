@@ -2,7 +2,8 @@
 var instagram = new Instagram.createClient( InstagramKeys.clientId, InstagramKeys.clientSecret );
 
 var getImages = function() {
-    instagram.tags.media('nofilter', Meteor.bindEnvironment(function (tags, error) {
+    // Tag search
+    instagram.tags.media('me', Meteor.bindEnvironment(function (tags, error) {
         tags.forEach(function(tag) {
             Instagrams.upsert(
                 { id : tag.id },
@@ -21,5 +22,3 @@ Meteor.startup(function() {
 var cron = Meteor.setInterval(function(t) {
     getImages();
 }, 10000);
-
-

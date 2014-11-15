@@ -23,12 +23,12 @@ ul.slideshow li {
     list-style-type: none;
     margin-bottom: -5px;
     transition: transform .2s ease-out;
+    z-index: 1;
 }
 
 ul.slideshow li:hover {
     transform: scale(5);
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    z-index: 99;
+    z-index: 99999;
 }
 
 ul.slideshow li img {
@@ -36,4 +36,8 @@ ul.slideshow li img {
     height: 100%;
     opacity: 0;
     transition: opacity .5s ease-out, width 1s ease-out;
+}
+
+ul.slideshow li:hover img {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
