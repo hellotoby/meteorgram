@@ -27,7 +27,7 @@ ul.slideshow li {
 }
 
 ul.slideshow li:hover {
-    transform: scale(5);
+    transform: scale(3);
     z-index: 99999;
 }
 
