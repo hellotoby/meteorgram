@@ -26,10 +26,10 @@ ul.slideshow li {
     z-index: 1;
 }
 
-ul.slideshow li:hover {
+/*ul.slideshow li:hover {
     transform: scale(3);
     z-index: 99999;
-}
+}*/
 
 ul.slideshow li img {
     width: 100%;
