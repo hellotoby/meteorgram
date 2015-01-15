@@ -38,6 +38,6 @@ ul.slideshow li img {
     transition: opacity .5s ease-out, width 1s ease-out;
 }
 
-ul.slideshow li:hover img {
+/*ul.slideshow li:hover img {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
-}
+}*/
