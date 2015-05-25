@@ -8,6 +8,7 @@ function removeInvisible() {
         var wHeight = $(window).innerHeight();
         if( offset.top > wHeight ) {
             el.remove();
+            Meteor.call( 'deleteGram', el.data('id') );
         }
     });
 }
