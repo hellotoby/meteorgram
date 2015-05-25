@@ -1,5 +1,7 @@
 # Metorgram
 
+![Meteorgram](http://au.com.lvfrvr.s3.amazonaws.com/meteorgram.jpg)
+
 Meteorgram is a live Instagram feed / media wall in the browser, built with Meteor.
 
 ### Configuration

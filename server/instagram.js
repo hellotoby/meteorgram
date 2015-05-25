@@ -3,7 +3,7 @@ var instagram = new Instagram.createClient( InstagramKeys.clientId, InstagramKey
 
 var getImages = function() {
     // Tag search
-    instagram.tags.media('newyork', Meteor.bindEnvironment(function (tags, error) {
+    instagram.tags.media('sydney', Meteor.bindEnvironment(function (tags, error) {
         tags.forEach(function(tag) {
             Instagrams.upsert(
                 { id : tag.id },
