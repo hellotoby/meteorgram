@@ -1,4 +1,4 @@
-# Metorgram
+# Meteorgram
 
 ![Meteorgram](http://au.com.lvfrvr.s3.amazonaws.com/meteorgram.jpg)
 
