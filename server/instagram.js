@@ -3,7 +3,7 @@ var instagram = new Instagram.createClient( InstagramKeys.clientId, InstagramKey
 
 var getImages = function() {
     // Tag search
-    instagram.tags.media('sydney', Meteor.bindEnvironment(function (tags, error) {
+    instagram.tags.media('stars', Meteor.bindEnvironment(function (tags, error) {
         tags.forEach(function(tag) {
             Instagrams.upsert(
                 { id : tag.id },
@@ -11,6 +11,10 @@ var getImages = function() {
             );
         });
     }));
+}
+
+var deleteImages = function() {
+    Instagrams.remove({});
 }
 
 // Retrieve some images on startup
@@ -21,4 +25,4 @@ Meteor.startup(function() {
 // Check for new images every 5 seconds
 var cron = Meteor.setInterval(function(t) {
     getImages();
-}, 10000);
+}, 5000);

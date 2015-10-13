@@ -4,6 +4,9 @@ Meteor.publish("images", function () {
 });
 
 Meteor.methods({
+    deleteAll : function() {
+        Instagrams.remove({});
+    },
     deleteGram : function(id) {
         Instagrams.remove({ _id: id });
     }

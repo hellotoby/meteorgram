@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background: #000;
-    cursor: none;
+    /*cursor: none;*/
 }
 
 ul.slideshow {
@@ -37,6 +37,18 @@ ul.slideshow li img {
     height: 100%;
     opacity: 0;
     transition: opacity .5s ease-out, width 1s ease-out;
+}
+
+.settings {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    background: #DDD;
+    border-radius: 10px;
+    display: none;
 }
 
 /*ul.slideshow li:hover img {
